@@ -1,6 +1,6 @@
 {
   "name": "ts-json-schema-generator",
-  "version": "0.18.0",
+  "version": "0.18.1",
   "description": "Generate JSON schema from your Typescript sources",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/vega/ts-json-schema-generator.git"
+    "url": "https://github.com/jiborobot/ts-json-schema-generator.git"
   },
   "licenses": [
     {
@@ -66,5 +66,8 @@
     "test": "tsc -p . && mocha -t 10000 --require source-map-support/register --recursive dist/test",
     "debug": "ts-node --inspect=19248 --debug-brk ts-json-schema-generator.ts",
     "run": "ts-node ts-json-schema-generator.ts"
+  },
+  "publishConfig": {
+    "registry": "http://npm.jibo.com:8080/"
   }
 }
